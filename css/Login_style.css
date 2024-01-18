@@ -1,3 +1,15 @@
 .hidden {
     display: none;
 }
+
+img {
+    position:absolute; /*다른 요소와 겹침 다른 요소들은 자동 정렬*/
+    width:100%;   /*사진 비율*/
+    height:100%;
+    left: 0px;   /*사진 위치*/
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;   /*스택 순서가 큰 요소가 항상 스택 순서가 낮은 요소 앞에 있음. 따라서 -1은 반대상황임*/
+    opacity:60%;   /*불투명도(0~1)*/
+    }
